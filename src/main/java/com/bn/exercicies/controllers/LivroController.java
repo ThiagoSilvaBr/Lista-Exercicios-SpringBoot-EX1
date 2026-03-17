@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/livraria")
+@RequestMapping("/livros")
 public class LivroController {
 
     @Autowired
@@ -40,7 +40,15 @@ public class LivroController {
         Optional<LivroModel> request = livroService.findById(id);
         return ResponseEntity.ok().body(request);
     }
-
+    
+    /*
+    @PutMapping("/{id}")
+    public ResponseEntity<LivroModel> atualizarLivro(@PathVariable Long id, @RequestBody LivroModel livroModel){
+        LivroModel request = livroService.atualizarLivro(id, livroModel);
+        return ResponseEntity.status(201).body(livroModel);
+    }
+    */
+    
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deletarLivro(@PathVariable Long id){
         livroService.deletarLivro(id);
