@@ -26,6 +26,7 @@ public class LivroService {
         return livroRepository.save(livroModel);
     }
 
+    /*
     public LivroModel atualizarLivro(LivroModel livroModel, Long id){
        LivroModel livro = livroRepository.findById(id).get();
         livro.setTitulo(livroModel.getTitulo());
@@ -33,7 +34,8 @@ public class LivroService {
         return livroRepository.save(livro);
 
     }
-
+    */
+    
     public void deletarLivro(Long id){
         livroRepository.deleteById(id);
     }
