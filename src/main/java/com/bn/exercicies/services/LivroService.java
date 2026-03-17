@@ -26,7 +26,7 @@ public class LivroService {
         return livroRepository.save(livroModel);
     }
 
-    public LivroModel autalizarLivro(LivroModel livroModel, Long id){
+    public LivroModel atualizarLivro(LivroModel livroModel, Long id){
        LivroModel livro = livroRepository.findById(id).get();
         livro.setTitulo(livroModel.getTitulo());
 
