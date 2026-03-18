@@ -1,4 +1,4 @@
-package com.bn.Exercicies.models;
+package com.bn.exercicies.models;
 
 import jakarta.persistence.*;
 

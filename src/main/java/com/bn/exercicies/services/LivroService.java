@@ -1,7 +1,7 @@
-package com.bn.Exercicies.services;
+package com.bn.exercicies.services;
 
-import com.bn.Exercicies.models.LivroModel;
-import com.bn.Exercicies.repositories.LivroRepository;
+import com.bn.exercicies.models.LivroModel;
+import com.bn.exercicies.repositories.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

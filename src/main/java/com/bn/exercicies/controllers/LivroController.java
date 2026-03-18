@@ -1,7 +1,7 @@
-package com.bn.Exercicies.controllers;
+package com.bn.exercicies.controllers;
 
-import com.bn.Exercicies.models.LivroModel;
-import com.bn.Exercicies.services.LivroService;
+import com.bn.exercicies.models.LivroModel;
+import com.bn.exercicies.services.LivroService;
 import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
